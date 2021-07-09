@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Make the code generator, then generate a table header file.
+# If this messes up somehow, the file include/generated/BACKUP_marching_cubes_table.h can be renamed to 
+# BACKUP_marching_cubes_table.c.
+
+rm code_generation
+rm -rf build/*
+mkdir build/Exhibits
+make code_generation
+./code_generation

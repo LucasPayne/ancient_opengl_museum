@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Build the program from scratch (removing all build files first), then run it.
+
+rm -rf build/*
+mkdir build/Exhibits
+make
